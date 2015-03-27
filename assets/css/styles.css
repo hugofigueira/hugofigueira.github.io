@@ -494,9 +494,13 @@ iframe {
 }
 /* ======= Footer ======= */
 .footer {
-  background: #32383e;
-  color: #fff;
+  background: #f5f5f5;
+  color: #778492;
   padding: 10px 0;
+  font-size: 14px;
+}
+.footerspan {
+  border-bottom: 1px dotted #778492;
 }
 .footer .copyright {
   line-height: 1.6;
@@ -507,7 +511,9 @@ iframe {
   color: #fff;
 }
 .footer .fa-heart {
-  color: #fb866a;
+  color: #66CB8C;
+  margin-left: 2px;
+  margin-right: 2px;
 }
 /* Extra small devices (phones, less than 768px) */
 @media (max-width: 767px) {
