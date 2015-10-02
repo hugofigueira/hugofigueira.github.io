@@ -1,0 +1,759 @@
+  <!DOCTYPE html>
+  <html lang="en">
+
+    <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Millennium bim - Transaction Center</title>
+      <link href="css/custom.css" rel="stylesheet">
+      <link href="css/bootstrap.css" rel="stylesheet">
+      <link href="css/font-awesome.css" rel="stylesheet">
+      <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,500,500italic,700,700italic|Roboto+Condensed:400,700,400italic,300,700italic,300italic' rel='stylesheet' type='text/css'>
+      <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+      <![endif]-->
+    </head>
+
+    <body>
+
+           <!-- NAVBAR TOP -->
+           <div class="topbar">
+             <div class="container">
+               <div class="row">
+                 <div class="col-md-4 col-sm-4 col-xs-4"><a href="login.html"><img src="img/logo.jpg" class="mainlogo" alt="Millennium bim"/></a></div>
+                 <div class="col-md-6 col-sm-8 col-xs-8 col-md-offset-2">
+                   <ul class="list-inline navbar-list text-right">
+                     <li><a href="#">Particulares</a></li>
+                     <li><a href="#">Empresas</a></li>
+                     <li><a href="#">Institucional</a></li>
+                     <li class="activelink">Acesso às contas</li>
+                   </ul>
+                 </div>
+               </div>
+             </div>
+           </div>
+
+           <!-- PHONE ICON -->
+           <a style="cursor:pointer;" id="phoneopen" class="phone-icon"></a>
+           <div class="phone-icon-open" id="phonebig">
+             <div class="row">
+                <div class="col-xs-2"><i class="fa fa-phone fa-2x"></i></div>
+                <div class="col-xs-10 smaller"><div class="space-10"></div><strong>LIGUE-NOS</strong></div>
+             </div>
+             <div class="space-15"></div>
+             <div class="row text-right smaller-2x">
+                 <div class="col-xs-12">
+                    <strong>TELEFONE</strong><br>
+                    +258 21 350035
+                    <div class="space-10"></div>
+                    <strong>TELEMÓVEL</strong><br>
+                    +258 82 358935<br>
+                    +258 84 448130<br>
+                    +258 86 758932<br>
+                 </div>
+             </div>
+             <div class="space-10"></div>
+             <a style="cursor:pointer;" id="phoneclose"><div class="smaller-3x text-right"><i class="fa fa-times"></i> fechar</div></a>
+           </div>
+
+           <!-- LOGOUT -->
+           <div class="space-30"></div>
+           <div class="container">
+             <div class="row">
+               <div class="col-md-8"></div>
+               <div class="col-md-4 text-right blue smaller-2x"><a href="#" class="transparent-btn transparent-btn-border"><i class="fa fa-power-off"></i> TERMINAR SESSÃO</a></div>
+             </div>
+           </div>
+
+
+           <div class="space-20"></div>
+           
+      <div class="container">
+
+             <!-- NAVBAR DOWN -->
+             <div class="greybar">
+               <div class="row">
+                 <div class="col-md-1"><a href="index.html"><img src="img/logo3.png" class="smalllogo2"></a></div>
+                 <div class="col-md-11">
+                   <ul class="list-inline greybar-list">
+                       <li style="cursor:pointer;" id="sm-transfers-open">Transferências</li>
+                       <li style="cursor:pointer;" id="sm-payments-open">Pagamentos</li>
+                       <li style="cursor:pointer;" id="sm-accounts-open">Contas</li>
+                       <li>Cartões</li>
+                       <li>Poupança</li>
+                       <li>Crédito</li>
+                       <li>Personalização</li>
+                       <li class="search-open" style="cursor:pointer;" id="sm-search-open"><i class="fa fa-search"></i></li>
+                   </ul>
+                 </div>
+               </div>
+             </div>
+
+             <div class="search" id="sm-search">
+                  <div class="row">
+                      <div class="col-xs-9">
+                          <input class="input-sm beneficiario_search" type="text" placeholder="Pesquisar">
+                      </div>
+                      <div class="col-xs-3"><i class="fa fa-search fa-2x search-close" id="sm-search-close" style="cursor:pointer;"></i></div>
+                  </div>
+             </div>
+
+             <!-- SUBMENU TRANSFERÊNCIAS -->
+             <div class="submenu" id="sm-transfers">
+                <div class="row">
+                    <div class="col-md-3">
+                        <span class="smaller grey">ENTRE CONTAS BIM</span>
+                        <ul class="list-unstyled smaller"> 
+                            <li>Contas de moeda diferente</li>
+                            <li>Minhas contas</li>
+                        </ul>
+                        <div class="space-20"></div>
+                        <span class="smaller grey">PARA OUTROS BANCOS</span>
+                        <ul class="list-unstyled smaller"> 
+                            <li><a href="transf_domestica.html">Doméstica/Cash directo</a></li>
+                            <li>Internacional</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <span class="smaller grey">AGENDAMENTOS</span>
+                        <ul class="list-unstyled smaller"> 
+                            <li>Lista</li>
+                            <li>Novo</li>
+                        </ul>
+                        <div class="space-20"></div>
+                        <span class="smaller grey">BENEFICIÁRIOS</span>
+                        <ul class="list-unstyled smaller"> 
+                            <li>Lista</li>
+                            <li>Novo</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <span class="smaller grey">MAIS</span>
+                        <ul class="list-unstyled smaller"> 
+                            <li>Destinatários de confiança</li>
+                            <li>Favoritos</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                      <center><img src="img/submenu_pub.png" class="img-responsive"></center>
+                    </div>
+                </div>
+             </div>
+
+            <!-- SUBMENU PAGAMENTOS -->
+             <div class="submenu" id="sm-payments">
+                <div class="row">
+                    <div class="col-md-3">
+                        <span class="smaller grey">PAGAMENTOS</span>
+                        <ul class="list-unstyled smaller"> 
+                            <li>Serviços</li>
+                            <li>Telemóveis</li>
+                            <li>Cartão Pré-Pago</li>
+                            <li>Estado/Judiciais</li>
+                            <li>Outros</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <span class="smaller grey">COMPRA DE RECARGA</span>
+                        <ul class="list-unstyled smaller"> 
+                            <li><a href="compra_recarga.html">Compra Credelec</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <span class="smaller grey">CONTADORES</span>
+                        <ul class="list-unstyled smaller"> 
+                            <li>Lista</li>
+                            <li>Novo</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                      <center><img src="img/submenu_pub.png" class="img-responsive"></center>
+                    </div>
+                </div>
+             </div>
+
+            <!-- SUBMENU CONTAS -->
+             <div class="submenu" id="sm-accounts">
+                <div class="row">
+                    <div class="col-md-3">
+                        <span class="smaller grey">CONSULTAS</span>
+                        <ul class="list-unstyled smaller"> 
+                            <li><a href="patrimonio.html">Património</a></li>
+                            <li><a href="accounts_list.html">As minhas contas</a></li>
+                            <li>Saldos e movimentos</li>
+                            <li><a href="nib_iban.html">NIB/IBAN</a></li>
+                        </ul>
+                        <div class="space-20"></div>
+                        <span class="smaller grey">ALTERAR</span>
+                        <ul class="list-unstyled smaller"> 
+                            <li>Nome das contas</li>
+                            <li>Adicionar/retirar contas</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <span class="smaller grey">CHEQUES</span>
+                        <ul class="list-unstyled smaller"> 
+                            <li>Requisitar</li>
+                            <li>Consultar</li>
+                            <li>Carta-Cheque</li>
+                        </ul>
+                          <span class="smaller grey">DOCUMENTOS EM FORMATO DIGITAL</span>
+                          <ul class="list-unstyled smaller"> 
+                              <li>Aderir</li>
+                              <li>Alterar/anular</li>
+                              <li>Consultar</li>
+                          </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <span class="smaller grey">ALERTAS</span>
+                        <ul class="list-unstyled smaller"> 
+                            <li>Criar alertas</li>
+                            <li>Consultar/anular</li>
+                        </ul>
+                        <span class="smaller grey">SERVIÇOS</span>
+                        <ul class="list-unstyled smaller"> 
+                            <li>Gestor de finanças</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                      <center><img src="img/submenu_pub.png" class="img-responsive"></center>
+                    </div>
+                </div>
+             </div>
+
+        <!-- HEAD -->
+        <div class="space-30"></div>
+        <div class="row">
+          <div class="col-md-7">
+            <h2 class="pink">Transaction Center</h2>
+          </div>
+          <div class="col-md-5">
+            <div class="form-group form-group-sm">
+              <label class="col-sm-6 text-right control-label empresalabel" for="formGroupInputSmall">SELECCIONAR EMPRESA</label>
+              <div class="col-sm-6">
+                <select class="greycontrol" id="status" name="status">
+                  <option>Sonae</option>
+                  <option>Brisa</option>
+                  <option>Galp</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="space-50"></div>
+
+        <!-- SECTION 1 -->
+        <div class="row">
+            <div class="col-md-2">
+              <ul class="nav nav-pills">
+                <li role="presentation" class="dropdown">
+                  <a class="dropdown-toggle smaller-2x" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                    <strong>NOVA TRANSACÇÃO</strong> <i class="fa fa-chevron-down"></i>
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">TRANSF. ENTRE MINHAS CONTAS</a></li>
+                    <li><a href="transf_domestica.html">TRANSF. DOMÉSTICAS</a></li>
+                    <li><a href="#">TRANSF. INTERNACIONAIS</a></li>
+                    <li><a href="#">AGENDAMENTO DE TRANSF.</a></li>
+                    <li><a href="#">APLICAÇÕES A PRAZO</a></li>
+                    <li><a href="#">TRANSF. ENTRE MOEDAS DIFERENTES</a></li>
+                    <li><a href="compra_recarga.html">COMPRA DE RECARGA</a></li>
+                    <li><a href="#">PAGAMENTO DE SERVIÇOS</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-10">
+              <ul class="nav nav-tabs" role="tablist">
+                <li role="presentation" class="active"><a href="#drafts" aria-controls="drafts" role="tab" data-toggle="tab">DRAFTS</a></li>
+                <li role="presentation"><a href="#pending" aria-controls="pending" role="tab" data-toggle="tab">PENDENTES</a></li>
+                <li role="presentation"><a href="#sent" aria-controls="sent" role="tab" data-toggle="tab">ENVIADAS</a></li>
+              </ul>
+            </div>
+          </div>
+            <div class="tab-content">
+              <div role="tabpanel" class="tab-pane active" id="drafts">
+                    <div class="space-20"></div>
+                    <div class="mylabel mylabel-grey">
+                        <span><i class="fa fa-edit" style="font-size: 45px;"></i></span>
+                        Poderá consultar aqui todas as suas transacções por submeter.
+                    </div>
+                    <div class="row tab-pad">
+                        <table class="table table-striped smaller">
+                            <thead>
+                              <tr>
+                                <th>ID</th>
+                                <th>Tipo de transacção</th>
+                                <th>Data</th>
+                                <th>Beneficiário/Descrição</th>
+                                <th>Quantia</th>
+                                <th>Moeda</th>
+                                <th>Estado</th>
+                              </tr>
+                             </thead>
+                             <tbody>
+                              <tr>
+                                <td><input type="checkbox"> 12345678</td>
+                                <td>Abertura CRIM</td>
+                                <td>15-06-2015 18:30</td>
+                                <td><a href="#">Abertura de Crédito Documentário</a></td>
+                                <td>- - -</td>
+                                <td>- - -</td>
+                                <td>Por completar</td>
+                              </tr>
+                              <tr>
+                                <td><input type="checkbox"> 57294821</td>
+                                <td>Proc. Ficheiros</td>
+                                <td>14-06-2015 12:30</td>
+                                <td><a href="#">Ficheiro de Transf. pedido nº1004032</a></td>
+                                <td>180.340,17</td>
+                                <td>MZN</td>
+                                <td>Completa</td>
+                              </tr>
+                              <tr>
+                                <td><input type="checkbox"> 57294821</td>
+                                <td>Transf. Internacional</td>
+                                <td>10-06-2015 10:35</td>
+                                <td><a href="#">PT5069120000234674214999</a></td>
+                                <td>50.850,00</td>
+                                <td>USD</td>
+                                <td>Completa</td>
+                              </tr>
+                              <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                             </tbody>
+                            </table>
+                    </div>
+                    <div class="row tab-pad smaller text-right">
+                        <div class="col-md-7 col-md-offset-5">
+                          <button type="button" class="btn btn-grey" data-dismiss="modal">ELIMINAR</button>
+                          <button type="button" class="btn btn-grey" data-dismiss="modal">SUBMETER</button>
+                        </div>
+                    </div>
+              </div>
+              <div role="tabpanel" class="tab-pane" id="pending">
+                    <div class="space-20"></div>
+                    <div class="mylabel mylabel-grey">
+                        <span><i class="fa fa-hourglass-3"></i></span>
+                        Poderá consultar aqui todas as suas transações pendentes.
+                    </div>
+                    <div class="row tab-pad">
+                        <div class="col-md-2">
+                          <div class="checkbox">
+                            <label>
+                              <input type="checkbox"> Assinado</input>
+                            </label>
+                          </div>
+                        </div>
+                        <div class="col-md-2">
+                          <div class="checkbox">
+                            <label>
+                              <input type="checkbox"> Não assinado</input>
+                            </label>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="row tab-pad">
+                        <div class="col-md-4">
+                              <div class="form-group">
+                                <label for="selectaccount">Conta</label>
+                                <select id="selectaccount" class="whitecontrol">
+                                  <option>Tudo</option>
+                                  <option>1234567</option>
+                                  <option>7654321</option>
+                                </select>
+                              </div>
+                        </div>
+                        <div class="col-md-4">
+                              <div class="form-group">
+                                <label for="selectaccount">Tipo de transacção</label>
+                                <select id="selectaccount" class="whitecontrol">
+                                  <option>Tudo</option>
+                                  <option>Abertura CRIM</option>
+                                  <option>Proc. Ficheiros</option>
+                                  <option>Garantia Bancária</option>
+                                  <option>Transf. Doméstica</option>
+                                  <option>Transf. Internacional</option>
+                                </select>
+                              </div>
+                        </div>
+                        <div class="col-md-4">
+                              <div class="form-group">
+                                <label for="selectaccount">Criado por</label>
+                                <select id="selectaccount" class="whitecontrol">
+                                  <option>Tudo</option>
+                                  <option>user1</option>
+                                  <option>user2</option>
+                                </select>
+                              </div>
+                        </div>
+                    </div>
+                    <div class="space-15"></div>
+                    <div class="row tab-pad">
+                        <div class="col-md-4">
+                            <strong>Data de criação</strong> de
+                            <div class="space-10"></div>
+                            <div class="row">
+                              <div class="col-xs-3">
+                                <input type="text" class="form-control" placeholder="DD">
+                              </div>
+                              <div class="col-xs-3">
+                                <input type="text" class="form-control" placeholder="MM">
+                              </div>
+                              <div class="col-xs-4">
+                                <input type="text" class="form-control" placeholder="YYYY">
+                              </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            até
+                            <div class="space-10"></div>
+                            <div class="row">
+                              <div class="col-xs-3">
+                                <input type="text" class="form-control" placeholder="DD">
+                              </div>
+                              <div class="col-xs-3">
+                                <input type="text" class="form-control" placeholder="MM">
+                              </div>
+                              <div class="col-xs-4">
+                                <input type="text" class="form-control" placeholder="YYYY">
+                              </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="space-30"></div>
+                            <button type="button" class="btn btn-blue">ACTUALIZAR <i class="fa fa-refresh"></i></button>
+                        </div>
+                    </div>
+                    <div class="space-40"></div>
+                    <div class="row tab-pad">
+                        <div class="col-md-4 smaller-2x">
+                            <ul class="list-inline">
+                                <li><a href="#"><i class="fa fa-list"></i> Seleccionar tudo</a></li>
+                                <li><a href="#"><i class="fa fa-times"></i> Anular selecção</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row tab-pad">
+                        <table class="table table-striped smaller">
+                            <thead>
+                              <tr>
+                                <th>ID</th>
+                                <th>Tipo de transacção</th>
+                                <th>Data</th>
+                                <th>Beneficiário/Descrição</th>
+                                <th>Quantia</th>
+                                <th>Moeda</th>
+                                <th>Estado</th>
+                              </tr>
+                             </thead>
+                             <tbody>
+                              <tr>
+                                <td><input type="checkbox"> 12345678</td>
+                                <td>Abertura CRIM</td>
+                                <td>15-06-2015 18:30</td>
+                                <td><a href="#">Abertura de Crédito Documentário</a></td>
+                                <td>1.200,00</td>
+                                <td>MZN</td>
+                                <td>Pendente</td>
+                              </tr>
+                              <tr>
+                                <td><input type="checkbox"> 57294821</td>
+                                <td>Proc. Ficheiros</td>
+                                <td>14-06-2015 12:30</td>
+                                <td><a href="#">Ficheiro de Transf. pedido nº1004032</a></td>
+                                <td>180.340,17</td>
+                                <td>MZN</td>
+                                <td>Pendente</td>
+                              </tr>
+                              <tr>
+                                <td><input type="checkbox"> 12345678</td>
+                                <td>Garantia Bancária</td>
+                                <td>12-06-2015 18:30</td>
+                                <td><a href="#">Abertura de Garantia Bancária</a></td>
+                                <td>5.000,00</td>
+                                <td>EUR</td>
+                                <td>Pendente</td>
+                               </tr>
+                              <tr>
+                                <td><input type="checkbox"> 12300978</td>
+                                <td>Transf. Doméstica</td>
+                                <td>12-06-2015 18:44</td>
+                                <td><a href="#">MBIM DMC TESTE IB 266244922</a></td>
+                                <td>190,00</td>
+                                <td>MZN</td>
+                                <td>Pendente</td>
+                              </tr>
+                              <tr>
+                                <td><input type="checkbox"> 78772154</td>
+                                <td>Transf. Internacional</td>
+                                <td>10-06-2015 11:27</td>
+                                <td><a href="#">PT5069120000234674214974</a></td>
+                                <td>50.234,78</td>
+                                <td>USD</td>
+                                <td>Pendente</td>
+                              </tr>
+                              <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                             </tbody>
+                            </table>
+                        </div>
+                        <div class="row tab-pad smaller text-right">
+                            <div class="col-md-7 col-md-offset-5">
+                              <button type="button" class="btn btn-grey" data-dismiss="modal">ELIMINAR</button>
+                              <button type="button" class="btn btn-grey" data-dismiss="modal">REJEITAR ASSINATURA</button>
+                              <button type="button" class="btn btn-grey" data-dismiss="modal">UTILIZAR COMO NOVA</button>
+                              <button type="button" class="btn btn-grey" data-dismiss="modal">ASSINAR</button>
+                            </div>
+                        </div>
+              </div>
+              <div role="tabpanel" class="tab-pane" id="sent">
+                        <div class="space-20"></div>
+                        <div class="mylabel mylabel-grey">
+                            <span><i class="fa fa-mail-forward"></i></span>
+                            Poderá consultar aqui todas as suas transações confirmadas.
+                        </div>
+                        <div class="row tab-pad">
+                            <div class="col-md-2">
+                              <div class="checkbox">
+                                <label>
+                                  <input type="checkbox"> Assinado</input>
+                                </label>
+                              </div>
+                            </div>
+                            <div class="col-md-2">
+                              <div class="checkbox">
+                                <label>
+                                  <input type="checkbox"> Não assinado</input>
+                                </label>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="row tab-pad">
+                            <div class="col-md-4">
+                                  <div class="form-group">
+                                    <label for="selectaccount">Conta</label>
+                                    <select id="selectaccount" class="whitecontrol">
+                                      <option>Tudo</option>
+                                      <option>1234567</option>
+                                      <option>7654321</option>
+                                    </select>
+                                  </div>
+                            </div>
+                            <div class="col-md-4">
+                                  <div class="form-group">
+                                    <label for="selectaccount">Tipo de transacção</label>
+                                    <select id="selectaccount" class="whitecontrol">
+                                      <option>Tudo</option>
+                                      <option>Abertura CRIM</option>
+                                      <option>Proc. Ficheiros</option>
+                                      <option>Garantia Bancária</option>
+                                      <option>Transf. Doméstica</option>
+                                      <option>Transf. Internacional</option>
+                                    </select>
+                                  </div>
+                            </div>
+                            <div class="col-md-4">
+                                  <div class="form-group">
+                                    <label for="selectaccount">Criado por</label>
+                                    <select id="selectaccount" class="whitecontrol">
+                                      <option>Tudo</option>
+                                      <option>user1</option>
+                                      <option>user2</option>
+                                    </select>
+                                  </div>
+                            </div>
+                        </div>
+                        <div class="space-15"></div>
+                        <div class="row tab-pad">
+                            <div class="col-md-4">
+                                <strong>Data de criação</strong> de
+                                <div class="space-10"></div>
+                                <div class="row">
+                                  <div class="col-xs-3">
+                                    <input type="text" class="form-control" placeholder="DD">
+                                  </div>
+                                  <div class="col-xs-3">
+                                    <input type="text" class="form-control" placeholder="MM">
+                                  </div>
+                                  <div class="col-xs-4">
+                                    <input type="text" class="form-control" placeholder="YYYY">
+                                  </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                até
+                                <div class="space-10"></div>
+                                <div class="row">
+                                  <div class="col-xs-3">
+                                    <input type="text" class="form-control" placeholder="DD">
+                                  </div>
+                                  <div class="col-xs-3">
+                                    <input type="text" class="form-control" placeholder="MM">
+                                  </div>
+                                  <div class="col-xs-4">
+                                    <input type="text" class="form-control" placeholder="YYYY">
+                                  </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="space-30"></div>
+                                <button type="button" class="btn btn-blue">ACTUALIZAR <i class="fa fa-refresh"></i></button>
+                            </div>
+                        </div>
+                        <div class="space-40"></div>
+                        <div class="row tab-pad">
+                            <div class="col-md-4 smaller-2x">
+                                <ul class="list-inline">
+                                    <li><a href="#"><i class="fa fa-list"></i> Seleccionar tudo</a></li>
+                                    <li><a href="#"><i class="fa fa-times"></i> Anular selecção</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <table class="table table-striped smaller">
+                            <thead>
+                              <tr>
+                                <th>ID</th>
+                                <th>Tipo de transacção</th>
+                                <th>Data</th>
+                                <th>Beneficiário/Descrição</th>
+                                <th>Quantia</th>
+                                <th>Moeda</th>
+                                <th>Estado</th>
+                              </tr>
+                             </thead>
+                             <tbody>
+                              <tr>
+                                <td><input type="checkbox"> 12345678</td>
+                                <td>Abertura CRIM</td>
+                                <td>15-06-2015 18:30</td>
+                                <td><a href="#">Abertura de Crédito Documentário</a></td>
+                                <td>1.200,00</td>
+                                <td>MZN</td>
+                                <td>Enviada</td>
+                              </tr>
+                              <tr>
+                                <td><input type="checkbox"> 57294821</td>
+                                <td>Proc. Ficheiros</td>
+                                <td>14-06-2015 12:30</td>
+                                <td><a href="#">Ficheiro de Transf. pedido nº1004032</a></td>
+                                <td>180.340,17</td>
+                                <td>MZN</td>
+                                <td>Enviada</td>
+                              </tr>
+                              <tr>
+                                <td><input type="checkbox"> 12345678</td>
+                                <td>Garantia Bancária</td>
+                                <td>12-06-2015 18:30</td>
+                                <td><a href="#">Abertura de Garantia Bancária</a></td>
+                                <td>5.000,00</td>
+                                <td>EUR</td>
+                                <td>Enviada</td>
+                              </tr>
+                              <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                             </tbody>
+                            </table>
+                            <div class="row tab-pad smaller text-right">
+                                <div class="col-md-7 col-md-offset-5">
+                                  <button type="button" class="btn btn-grey" data-dismiss="modal">ELIMINAR</button>
+                                  <button type="button" class="btn btn-grey" data-dismiss="modal">REJEITAR ASSINATURA</button>
+                                  <button type="button" class="btn btn-grey" data-dismiss="modal">UTILIZAR COMO NOVA</button>
+                                  <button type="button" class="btn btn-grey" data-dismiss="modal">ASSINAR</button>
+                                </div>
+                            </div>
+              </div>
+            </div>
+
+                <div class="space-75"></div>
+                </div>
+
+           <div class="footer">
+               <div class="container">
+               <div class="row tab-pad">
+                      <div class="footer-options">
+                           <ul class="list-inline text-center smaller-2x">
+                               <li><a href="#">Pontos para contacto</a></li> |
+                               <li><a href="#">Ajuda</a></li> |
+                               <li><a href="#">Preçário</a></li> |
+                               <li><a href="#">Manual de navegação</a></li>
+                           </ul>
+                      </div>
+                </div>
+                <div class="footer-box">
+                         <div class="row">
+                             <div class="col-md-3">
+                               <ul class="list-unstyled">
+                                 <li class="text-normal">Apoio ao cliente</li>
+                                 <div class="space-10"></div>
+                                 <li><a href="#">Onde estamos</a></li>
+                                 <li><a href="#">Em caso de emergência</a></li>
+                               </ul>
+                             </div>
+                             <div class="col-md-3">
+                               <ul class="list-unstyled">
+                                 <li class="text-normal">Sobre o website</li>
+                                 <div class="space-10"></div>
+                                 <li><a href="#">Segurança</a></li>
+                                 <li><a href="#">Condições de utilização</a></li>
+                               </ul>
+                             </div>
+                             <div class="col-md-3">
+                               <ul class="list-unstyled">
+                                 <li class="text-normal">Institucional</li>
+                                 <div class="space-10"></div>
+                                 <li><a href="#">Imprensa</a></li>
+                                 <li><a href="#">Quem somos</a></li>
+                                 <li><a href="#">Aviso legal</a></li>
+                               </ul>
+                             </div>
+                             <div class="col-md-3 smaller-3x text-center">
+                             <div class="space-20"></div>
+                             O millenniumbim.co.mz é um serviço do Banco Internacional de Moçambique SA.
+                             </div>
+                         </div>
+                  </div>
+              </div>
+           </div>
+
+                    <!-- MODAL TIMEOUT -->
+                     <div class="modal fade" id="timeout" tabindex="-1" role="dialog" aria-labelledby="shortcutsLabel">
+                       <div class="modal-dialog" role="document">
+                         <div class="modal-content">
+                           <div class="modal-header">
+                             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="fa fa-times blue"></i></span></button>
+                             <h4 class="modal-title pink" id="shortcutsLabel">RENOVAÇÃO DE SESSÃO</h4>
+                           </div>
+                           <div class="modal-body">
+                             <div class="row tab-pad">
+                                  <div class="pink">TEMPO DE INACTIVIDADE MÁXIMO ALCANÇADO</div>
+                                  <div class="line"></div>
+                                  <div class="space-10"></div>
+                                  <div class="mylabel mylabel-grey2">
+                                      <div class="row">
+                                          <div class="col-md-2 text-right">
+                                              <i class="fa fa-times fa-4x pink text-right"></i>
+                                          </div>
+                                          <div class="col-md-10 smaller grey">
+                                              <div class="space-15"></div>
+                                              <p>Volte a iniciar sessão no serviço de Internet Banking.</p>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                           </div>
+                           <div class="space-20"></div>
+                           <div class="modal-footer text-right">
+                             <a href="login.html" type="button" class="btn btn-blue">RENOVAR SESSÃO</a>
+                           </div>
+                         </div>
+                       </div>
+                     </div>
+
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+      <script src="js/custom.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+
+    </body>
+
+  </html>
